@@ -1,0 +1,45 @@
+{
+  "name": "@coldboy002/prettier-config",
+  "version": "1.0.0",
+  "description": "My prettier config",
+  "keywords": [
+    "prettier",
+    "config",
+    "prettierconfig"
+  ],
+  "homepage": "https://github.com/coldboy002/prettier-config#readme",
+  "bugs": {
+    "url": "https://github.com/coldboy002/prettier-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coldboy002/prettier-config.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Vũ Trọng Thuỷ",
+    "email": "coldboy002@gmail.com",
+    "url": "https://github.com/coldboy002"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "fix": "prettier examples/*.js --write",
+    "test": "prettier examples/*.js --check"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  },
+  "peerDependencies": {
+    "prettier": "^2.8.8"
+  },
+  "engines": {
+    "node": ">=15"
+  },
+  "prettier": "./index.js",
+  "publishConfig": {
+    "access": "public"
+  }
+}
