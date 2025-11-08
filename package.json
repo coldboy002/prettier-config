@@ -5,7 +5,7 @@
   "keywords": [
     "prettier",
     "config",
-    "prettierconfig"
+    "prettier-config"
   ],
   "homepage": "https://github.com/coldboy002/prettier-config#readme",
   "bugs": {
@@ -22,23 +22,21 @@
     "url": "https://github.com/coldboy002"
   },
   "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "scripts": {
     "fix": "prettier examples/*.js --write",
     "test": "prettier examples/*.js --check"
   },
+  "prettier": "./index.js",
   "devDependencies": {
-    "prettier": "^2.8.8"
+    "@prettier/plugin-pug": "^3.4.2",
+    "prettier": "^3.6.2"
   },
   "peerDependencies": {
-    "prettier": "^2.8.8"
+    "prettier": "^3.6.2"
   },
   "engines": {
-    "node": ">=15"
+    "node": ">=22"
   },
-  "prettier": "./index.js",
   "publishConfig": {
     "access": "public"
   }
