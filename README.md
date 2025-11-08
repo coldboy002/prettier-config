@@ -18,7 +18,7 @@ or
 yarn add --dev @coldboy002/prettier-config
 ```
 
-**Note**: This package requires Node.js 15.0.0 or later. It is not compatible with older versions.
+**Note**: This package requires Node.js 22.0.0 or later. It is not compatible with older versions.
 
 ## Usage
 
