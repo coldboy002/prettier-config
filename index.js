@@ -4,8 +4,15 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'all',
 
-  // Overrides for specific files .pug
   overrides: [
+    // Overrides for specific files .css, .sass, .scss
+    {
+      files: ['*.css', '*.sass', '*.scss'],
+      options: {
+        singleQuote: false,
+      },
+    },
+    // Overrides for specific files .pug
     {
       files: ['*.pug'],
       options: {
@@ -21,16 +28,6 @@ module.exports = {
         pugExplicitDiv: false,
         pugPreserveAttributeBrackets: false,
         pugPreserveWhitespace: true,
-      },
-    },
-  ],
-
-  // Overrides for specific files .css, .sass, .scss
-  overrides: [
-    {
-      files: ['*.css', '*.sass', '*.scss'],
-      options: {
-        singleQuote: false,
       },
     },
   ],
