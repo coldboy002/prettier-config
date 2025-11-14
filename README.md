@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/@coldboy002/prettier-config.svg)](https://www.npmjs.org/package/@coldboy002/prettier-config)
 
-> My config for [Prettier](https://prettier.io/).
+> Shareable config for [Prettier](https://prettier.io/).
 
 For consistent formatting across my repos.
 
@@ -25,7 +25,7 @@ yarn add --dev @coldboy002/prettier-config
 Add this line to your `package.json`
 
 ```json
-"prettier": "@coldboy002/prettier-config"
+"prettier": "@coldboy002/prettier-config",
 ```
 
 Alternatively, add this to `.prettierrc` file:
@@ -34,10 +34,18 @@ Alternatively, add this to `.prettierrc` file:
  "@coldboy002/prettier-config"
 ```
 
-Or add this to `.prettierrc.js` file:
+To extend the configuration, create prettier.config.js and spread this config onto your own config object:
 
 ```js
-module.exports = require( '@coldboy002/prettier-config' );
+import cbConfig from '@coldboy002/prettier-config'
+
+/** @type {import('prettier').Config} */
+const config = {
+	...cbConfig,
+	experimentalTernaries: true,
+}
+
+export default config
 ```
 
 Refer to [Prettier documentation](https://prettier.io/docs/en/configuration.html#sharing-configurations), if you need override some options.
